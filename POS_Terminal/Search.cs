@@ -32,27 +32,32 @@ namespace POS_Terminal
         {
             while (true)
             {
-                Search.SearchInventory();
-                Console.WriteLine("Enter Item's serial number");
+                
+                Console.WriteLine("Enter Item's serial number or any other entry to start searching for an item");
                 string itemSelection = Console.ReadLine();
-                foreach (Item x in Item.InventoryMaker())
+                if (int.TryParse(itemSelection, out int i))
                 {
-                    //Console.WriteLine(x.SerialNum);
-                    if (x.SerialNum == itemSelection && x.Quantity > 0)
+                    foreach (Item x in Item.InventoryMaker())
                     {
-                        return x;
+
+                        if (x.SerialNum == itemSelection && x.Quantity > 0)
+                        {
+                            Console.WriteLine($"{x.Name} added to list");
+                            //ADJUST QUANTITY... somehow
+                            return x;
+                        }
+                        else if (x.Quantity <= 0 && x.SerialNum == itemSelection) { Console.WriteLine("Item is out of stock"); break; }
+
+
                     }
-                    else if (x.Quantity <= 0 && x.SerialNum == itemSelection) { Console.WriteLine("Item is out of stock"); break; }
-                    
-                    
                 }
-                Console.WriteLine("IF YOU DID EVERYTHING RIGHT, YOU SHOULD NOT BE SEEING THIS");
+                else { Search.SearchInventory(); }
+                
             }
         }
 
 
-        //enter search term
-        // iterate through list of items, checking if characteristics of each object contain search term.
+
 
     }
 }
