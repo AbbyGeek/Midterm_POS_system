@@ -11,7 +11,7 @@ namespace POS_Terminal
         public static double FinalTotal(double subtotal, double tax)
         {
             double finalTotal = (subtotal + tax);
-            Console.WriteLine(MiscMethods.RecieptLine("Grand Total", finalTotal.ToString()));
+            Console.WriteLine(MiscMethods.RecieptLine("Grand Total", finalTotal.ToString("0.00")));
             return finalTotal;
         }
     }

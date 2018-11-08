@@ -11,21 +11,14 @@ namespace POS_Terminal
     {
         static void Main(string[] args)
         {
-            ///Product class with Name, Category,Description, Price for each item (quantity as well?)
-            ///12 items minimum. Stored in text file the program reads from
-            ///Present a menu and let user choose item by number or letter
+            
             //Allow user to choose quantity
-            ///Give user line total (item price * quantity)
-            /// add additional items to order
-            ///Show Subtotal, sales tax, grand total
-            ///Ask for payment type Cash Credit Check
-            /// for cash, ask for amount tendered, provide change
-            /// for check, get check number
-            /// for credit, get credit card number, expiration, and CCV
-            /// Display receipt with all items ordered, subtotal, grandtotal and payment info
-            /// return to original menu for new order
+            
             // Provide unit test for functions
             // Utelize Git and Github for version control.
+
+            //Either through the menu or a separate question, allowthem to re-display the menu and to complete thepurchase.
+
 
             List<Item> inventory = Item.InventoryMaker();
             while (true)
@@ -40,10 +33,11 @@ namespace POS_Terminal
                 if (choice == "2") { Search.SearchInventory(); }
                 if (choice == "3")
                 {
-                    List<Item> purchaceList = CheckoutList.Purchasing(); //creates the list of items
-                    double subtotal = CheckoutList.Subtotal(purchaceList); //lists items, prices, and subtotal before returning subtotal
+                    List<Item> purchaceList = CheckoutList.Purchasing(); //creates the list of items and lists them
+                    double subtotal = CheckoutList.JustSubtotal(purchaceList); //lists items, prices, and subtotal before returning subtotal
                     double tax = Tax.TaxNum(subtotal); //prints and returns tax
                     double grandTotal = GrandTotal.FinalTotal(subtotal, tax); //prints and stores grand total
+                    Console.WriteLine("\n\n");
 
                     while (true)
                     {

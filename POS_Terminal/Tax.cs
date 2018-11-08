@@ -10,7 +10,7 @@ namespace POS_Terminal
     {
         public static double TaxNum(double subtotal)
         {
-            string tax = (subtotal * .06).ToString();
+            string tax = (subtotal * .06).ToString("0.00");
             Console.WriteLine(MiscMethods.RecieptLine("Tax:", tax));
             return (subtotal * .06);
         }

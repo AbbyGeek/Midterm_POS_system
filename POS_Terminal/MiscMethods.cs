@@ -21,7 +21,7 @@ namespace POS_Terminal
 
         public static string RecieptLine(string left, string right)
         {
-            return($"*{left}".PadRight(20) + $"{right}*".PadLeft(20)); ;
+            return($"{left}".PadRight(20) + $"{right}".PadLeft(20)); ;
         }
         
     }

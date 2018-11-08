@@ -19,7 +19,9 @@ namespace POS_Terminal
                 {
                     Console.WriteLine("Incorrect entry. Try again"); continue;
                 }
+                if (RoutNum.Length != 9 || ActNum.Length >=17) { Console.WriteLine("Incorrect entry. Try again"); continue; }
                 Console.WriteLine("Payment Accepted");
+                break;
             }
         }
 
