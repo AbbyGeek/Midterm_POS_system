@@ -12,16 +12,7 @@ namespace POS_Terminal
         
         static void Main(string[] args)
         {
-            
-            //Allow user to choose quantity
-            
-            // Provide unit test for functions
-            // Utelize Git and Github for version control.
-
-            //Either through the menu or a separate question, allowthem to re-display the menu and to complete thepurchase.
-
-
-            //List<Item> inventory = Item.InventoryMaker();
+ 
             MainMenu.DisplayMenu();
         }
     }

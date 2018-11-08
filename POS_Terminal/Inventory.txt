@@ -7,6 +7,7 @@ Bont Stitched Toe Guards (Pair),Accesories,Bont Toe Guards,25.00,17,0006
 S1 Lifer Helmet,Protective,Helmet,60.00,8,0007
 187 Pro Elbow Pads,Protective,187 brand Elbow Protection,42.95,6,0008
 S1 Pro Knee Pads,Protective,S1 brand Knee Protection,100.00,5,0009
-Atom Elite Palm Guards,Protective,Atom brand Wrist Protection,12.00,8,0009
-SISU NextGen Aero Mouthguard (1.6mm),Protective,Sisu brand mouth guard,21.99,13,0010
-Atom Trolley Bag,Protective,Atom brand skate bag,109.95,3,0011
+Atom Elite Palm Guards,Protective,Atom brand Wrist Protection,12.00,8,0010
+SISU NextGen Aero Mouthguard (1.6mm),Protective,Sisu brand mouth guard,21.99,13,0011
+Atom Trolley Bag,Protective,Atom brand skate bag,109.95,3,0012
+Monkey Loob Cleaner 8oz Bottle,Maintinence,Bearking Cleaner,11.50,5,0013
