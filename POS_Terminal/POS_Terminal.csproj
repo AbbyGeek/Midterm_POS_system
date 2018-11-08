@@ -50,6 +50,7 @@
     <Compile Include="GrandTotal.cs" />
     <Compile Include="InventoryList.cs" />
     <Compile Include="Item.cs" />
+    <Compile Include="MainMenu.cs" />
     <Compile Include="MiscMethods.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace POS_Terminal
 {
-    class MiscMethods
+    public class MiscMethods
     {
         public static string GetInfo(string prompt)
         {
@@ -21,8 +21,8 @@ namespace POS_Terminal
 
         public static string RecieptLine(string left, string right)
         {
-            return($"{left}".PadRight(20) + $"{right}".PadLeft(20)); ;
+            return ($"{left}".PadRight(20) + $"{right}".PadLeft(20)); ;
         }
-        
+
     }
 }

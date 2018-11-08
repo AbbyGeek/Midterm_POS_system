@@ -35,7 +35,7 @@ namespace POS_Terminal
                 
                 Console.WriteLine("Enter Item's serial number. Enter 'q' to return to main menu, or any other entry to start searching for an item");
                 string itemSelection = Console.ReadLine();
-               // if (itemSelection == "q") { return null; }
+                if (itemSelection == "q") { MainMenu.DisplayMenu(); }
                 if (int.TryParse(itemSelection, out int i))
                 {
                     foreach (Item x in Item.InventoryMaker())

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace POS_Terminal
 {
-    class GrandTotal
+    public class GrandTotal
     {
         public static double FinalTotal(double subtotal, double tax)
         {
